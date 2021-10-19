@@ -49,6 +49,7 @@ export default {
   modules: [
     '@nuxtjs/i18n',
     '@nuxt/content',
+    '@nuxtjs/google-adsense',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -93,4 +94,10 @@ export default {
       brands: ['faGithub', 'faLinkedin', 'faFacebook', 'faInstagram', 'faSteam'],
     },
   },
+
+  // AdSense Configuration
+  'google-adsense': {
+    id: 'ca-pub-5813806614231709',
+  },
+
 }
