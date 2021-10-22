@@ -56,6 +56,16 @@ export default {
   build: {
   },
 
+  pwa: {
+    manifest: {
+      name: 'Suchorski',
+      short_name: 'Suchorski',
+    },
+    workbox: {
+      dev: process.env.NODE_ENV !== 'production',
+    },
+  },
+
   // Loading Configuration
   loading: {
     color: colors.gray[900],
