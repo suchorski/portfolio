@@ -6,6 +6,20 @@ export default {
   target: 'static',
   generate: {
     fallback: true,
+    async routes(callback) {
+      const fs = require('fs')
+      const locales = fs.readdirSync('./i18n')
+      const { $content } = require('@nuxt/content')
+      const routes = []
+      for (const locale of locales) {
+        const code = locale.slice(0, -3).toLocaleLowerCase()
+        const files = await $content(`${code}/blog`).only(['slug']).fetch()
+        files.forEach(file => {
+          routes.push(`/${code}/blog/${file.slug}`)
+        })
+      }
+      callback(null, routes)
+    },
   },
   head: {
     title: 'Thiago Suchorski',
