@@ -23,9 +23,6 @@ export default {
   },
   head: {
     title: 'Thiago Suchorski',
-    htmlAttrs: {
-      lang: 'en'
-    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -34,7 +31,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -63,6 +60,8 @@ export default {
   modules: [
     '@nuxtjs/i18n',
     '@nuxt/content',
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap',
     '@nuxtjs/google-adsense',
   ],
 
@@ -93,11 +92,14 @@ export default {
 
   // i18n Configuration
   i18n: {
+    strategy: 'prefix_and_default',
     langDir: '~/i18n',
     locales: [
-      { code: 'en-us', iso: 'en-US', file: 'en-US.js', dir: 'ltr', name: 'English' },
+      { code: 'en-us', iso: 'en-US', file: 'en-US.js', dir: 'ltr', name: 'English', isCatchallLocale: true },
       { code: 'pt-br', iso: 'pt-BR', file: 'pt-BR.js', dir: 'ltr', name: 'Português' },
     ],
+    defaultLocale: 'en-us',
+    baseUrl: 'https://www.suchorski.com',
     vueI18nLoader: true,
     vueI18n: {
       fallbackLocale: 'en-us',
@@ -117,6 +119,22 @@ export default {
     icons: {
       brands: ['faGithub', 'faLinkedin', 'faFacebook', 'faInstagram', 'faSteam'],
     },
+  },
+
+  // Robots Configuration: https://www.npmjs.com/package/@nuxtjs/robotsnpm
+  robots: [
+    {
+      UserAgent: '*',
+      Allow: '/'
+    },
+    {
+      Sitemap: 'https://www.suchorski.com/sitemap.xml',
+    },
+  ],
+
+  // Sitemap Configuration: https://sitemap.nuxtjs.org/usage/sitemap
+  sitemap: {
+    hostmane: 'https://www.suchorski.com',
   },
 
   // AdSense Configuration

@@ -12,6 +12,8 @@
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/google-adsense": "^1.4.0",
     "@nuxtjs/i18n": "^7.0.3",
+    "@nuxtjs/robots": "^2.5.0",
+    "@nuxtjs/sitemap": "^2.4.0",
     "@tailwindcss/typography": "^0.4.1",
     "@vue-hero-icons/outline": "^1.7.2",
     "core-js": "^3.15.1",

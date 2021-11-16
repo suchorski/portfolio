@@ -16,6 +16,13 @@
 import { HomeIcon, ChipIcon, MailIcon, BookOpenIcon } from '@vue-hero-icons/outline'
 
 export default {
+  head() {
+    return {
+      htmlAttrs: {
+        lang: this.$i18n.locale,
+      },
+    }
+  },
   data() {
     return {
       menu: {
