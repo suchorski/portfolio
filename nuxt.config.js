@@ -134,7 +134,7 @@ export default {
 
   // Sitemap Configuration: https://sitemap.nuxtjs.org/usage/sitemap
   sitemap: {
-    hostmane: 'https://www.suchorski.com',
+    hostname: 'https://www.suchorski.com',
   },
 
   // AdSense Configuration
