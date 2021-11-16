@@ -20,7 +20,6 @@ export default {
   },
   blog: {
     none: 'Nenhum artigo encontrado',
-    loading: 'Carregando artigos',
     read: 'Ler artigo',
     at: {
       created: 'Criado dia {cardinalDay} de {month} de {year}',

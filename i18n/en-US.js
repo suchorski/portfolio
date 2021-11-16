@@ -20,7 +20,6 @@ export default {
   },
   blog: {
     none: 'No articles found',
-    loading: 'Loading articles',
     read: 'Read article',
     at: {
       created: 'Created {month}, {ordinalDay} {year}',

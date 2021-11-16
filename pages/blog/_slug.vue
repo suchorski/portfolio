@@ -1,5 +1,5 @@
 <template>
-  <article class="flex flex-col space-y-4">
+  <article class="flex flex-col items-strech space-y-4">
     <SpTitle>
       {{ article.title }}
       <p class="text-sm font-thin">
@@ -13,17 +13,11 @@
 
 <script>
 export default {
-  data() {
+  async asyncData({ $content, i18n, params }) {
+    const article = await $content(`${i18n.locale}/blog`, params.slug).fetch()
     return {
-      article: {},
+      article,
     }
-  },
-  created() {
-    this.$content(`${this.$i18n.locale}/blog`, this.$route.params.slug)
-      .fetch()
-      .then((res) => {
-        this.article = res
-      })
   },
   methods: {
     formatDate(date) {
@@ -49,6 +43,6 @@ export default {
 
 <style lang="postcss">
 .prose {
-  @apply text-justify dark:text-text-dark;
+  @apply mx-auto text-justify dark:text-text-dark;
 }
 </style>
