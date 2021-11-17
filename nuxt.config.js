@@ -95,14 +95,14 @@ export default {
     strategy: 'prefix_and_default',
     langDir: '~/i18n',
     locales: [
-      { code: 'en-us', iso: 'en-US', file: 'en-US.js', dir: 'ltr', name: 'English', isCatchallLocale: true },
-      { code: 'pt-br', iso: 'pt-BR', file: 'pt-BR.js', dir: 'ltr', name: 'Português' },
+      { code: 'en-us', iso: 'en-US', file: 'en-US.js', dir: 'ltr', name: 'English' },
+      { code: 'pt-br', iso: 'pt-BR', file: 'pt-BR.js', dir: 'ltr', name: 'Português', isCatchallLocale: true },
     ],
-    defaultLocale: 'en-us',
+    defaultLocale: 'pt-br',
     baseUrl: 'https://www.suchorski.com',
     vueI18nLoader: true,
     vueI18n: {
-      fallbackLocale: 'en-us',
+      fallbackLocale: 'pt-br',
     },
   },
 
