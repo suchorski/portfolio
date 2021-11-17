@@ -28,6 +28,15 @@ export default {
   },
   works: [
     {
+      title: 'Zero Pane',
+      subtitle: 'Java Spring & Nuxt',
+      text: 'Questions and tests website for internal courses of the Brazilian Air Force.',
+      mockup: 'zeropane',
+      links: [
+        { text: 'Link to website', href: 'https://www.zeropane.com.br/' },
+      ],
+    },
+    {
       title: 'Wine Challenge',
       subtitle: 'Java Spring & Nuxt',
       text: 'Website containing Wine\'s challenge questions for consultation.',

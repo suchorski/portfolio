@@ -28,6 +28,15 @@ export default {
   },
   works: [
     {
+      title: 'Zero Pane',
+      subtitle: 'Java Spring & Nuxt',
+      text: 'Site de questões e provas para cursos internos da Força Aérea Brasileira.',
+      mockup: 'zeropane',
+      links: [
+        { text: 'Link para o site', href: 'https://www.zeropane.com.br/' },
+      ],
+    },
+    {
       title: 'Desafios da Wine',
       subtitle: 'Java Spring & Nuxt',
       text: 'Site contendo perguntas do desafio da Wine para consulta.',
