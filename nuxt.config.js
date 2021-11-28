@@ -140,6 +140,7 @@ export default {
   // AdSense Configuration
   'google-adsense': {
     id: 'ca-pub-5813806614231709',
+    tag: 'Adsense',
   },
 
 }
