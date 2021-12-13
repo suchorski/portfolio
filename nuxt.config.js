@@ -62,7 +62,6 @@ export default {
     '@nuxt/content',
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
-    '@nuxtjs/google-adsense',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -135,12 +134,6 @@ export default {
   // Sitemap Configuration: https://sitemap.nuxtjs.org/usage/sitemap
   sitemap: {
     hostname: 'https://www.suchorski.com',
-  },
-
-  // AdSense Configuration
-  'google-adsense': {
-    id: 'ca-pub-5813806614231709',
-    tag: 'Adsense',
   },
 
 }

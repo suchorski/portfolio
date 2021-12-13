@@ -4,9 +4,7 @@
       <SpNavDesktop :items="menu.items" />
     </header>
     <main class="m-2 pb-12 lg:pb-0">
-      <Adsense ad-slot="1374331898" />
       <Nuxt />
-      <Adsense ad-slot="1374331898" />
     </main>
     <footer>
       <SpNavMobile :items="menu.items" />
