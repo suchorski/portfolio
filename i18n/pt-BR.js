@@ -37,17 +37,6 @@ export default {
       ],
     },
     {
-      title: 'Desafios da Wine',
-      subtitle: 'Java Spring & Nuxt',
-      text: 'Site contendo perguntas do desafio da Wine para consulta.',
-      mockup: 'wine',
-      links: [
-        { text: 'Link para o site', href: 'https://wine.suchorski.com/' },
-        { text: 'Código Fonte (Backend)', href: 'https://github.com/suchorski/Wine-Backend/' },
-        { text: 'Código Fonte (Frontend)', href: 'https://github.com/suchorski/Wine-Frontend/' },
-      ],
-    },
-    {
       title: 'Relógio de Xadrez',
       subtitle: 'NativeScript',
       text: 'Aplicativo de código aberto que simula um relógio de xadrez feito em NativeScript para iOS e Android.',

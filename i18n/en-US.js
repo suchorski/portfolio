@@ -37,17 +37,6 @@ export default {
       ],
     },
     {
-      title: 'Wine Challenge',
-      subtitle: 'Java Spring & Nuxt',
-      text: 'Website containing Wine\'s challenge questions for consultation.',
-      mockup: 'wine',
-      links: [
-        { text: 'Link to website', href: 'https://wine.suchorski.com/' },
-        { text: 'Source code (Backend)', href: 'https://github.com/suchorski/Wine-Backend/' },
-        { text: 'Source code (Frontend)', href: 'https://github.com/suchorski/Wine-Frontend/' },
-      ],
-    },
-    {
       title: 'Chess Clock',
       subtitle: 'NativeScript',
       text: 'Open source app that simulates a chess clock made in NativeScript for iOS and Android.',

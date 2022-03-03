@@ -1,6 +1,6 @@
 {
   "name": "suchorski-portfolio",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "private": true,
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
