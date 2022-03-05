@@ -6,27 +6,13 @@ export default {
   target: 'static',
   generate: {
     fallback: true,
-    async routes(callback) {
-      const fs = require('fs')
-      const locales = fs.readdirSync('./i18n')
-      const { $content } = require('@nuxt/content')
-      const routes = []
-      for (const locale of locales) {
-        const code = locale.slice(0, -3).toLocaleLowerCase()
-        const files = await $content(`${code}/blog`).only(['slug']).fetch()
-        files.forEach(file => {
-          routes.push(`/${code}/blog/${file.slug}`)
-        })
-      }
-      callback(null, routes)
-    },
   },
   head: {
     title: 'Thiago Suchorski',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Thiago Suchorski' },
+      { hid: 'description', name: 'description', content: 'Thiago Suchorski`s Portfolio Website' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -59,7 +45,6 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/i18n',
-    '@nuxt/content',
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
   ],
@@ -68,13 +53,21 @@ export default {
   build: {
   },
 
+  // PWA configuration: https://pwa.nuxtjs.org/
   pwa: {
+    meta: {
+      mobileAppIOS: true,
+      name: 'Suchorski',
+      theme_color: colors.gray[900],
+      lang: 'pt-BR',
+      ogHost: 'www.suchorski.com',
+      nativeUI: true,
+    },
     manifest: {
       name: 'Suchorski',
       short_name: 'Suchorski',
-    },
-    workbox: {
-      dev: process.env.NODE_ENV !== 'production',
+      background_color: colors.gray[100],
+      lang: 'pt-BR',
     },
   },
 

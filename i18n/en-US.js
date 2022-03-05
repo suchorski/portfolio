@@ -6,7 +6,6 @@ export default {
     home: 'Home',
     works: 'Showcase',
     contact: 'Contact',
-    blog: 'Articles',
   },
   about: {
     me: 'My name is Thiago Bastos Suchorski, I currently live in Lagoa Santa - MG, born on January 21, 1987 and I\'ve always liked programming since I was little.',
@@ -18,15 +17,25 @@ export default {
     message: 'Feel free to contact me. You may be sending an email to <a href="mailto:thiago@suchorski.com">thiago@suchorski.com</a> which I will be replying to as soon as possible.',
     selling: 'I am open to complaints, suggestions, questions or budget requests.',
   },
-  blog: {
-    none: 'No articles found',
-    read: 'Read article',
-    at: {
-      created: 'Created {month}, {ordinalDay} {year}',
-      updated: ' and updated {month}, {ordinalDay} {year}',
-    },
-  },
   works: [
+    {
+      title: 'Rommanel Ponto Descontos',
+      subtitle: 'Java Spring & Nuxt',
+      text: 'Website for Rommanel products selling.',
+      mockup: 'rommanel',
+      links: [
+        { text: 'Link to website', href: 'https://www.rommanelpontodescontos.com.br/' },
+      ],
+    },
+        {
+      title: 'Wine Challenge',
+      subtitle: 'Java Spring & Nuxt',
+      text: 'Site to answer Wine questions automatically.',
+      mockup: 'wine',
+      links: [
+        { text: 'Link to website', href: 'https://wine.suchorski.com/' },
+      ],
+    },
     {
       title: 'Zero Pane',
       subtitle: 'Java Spring & Nuxt',

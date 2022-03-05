@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { HomeIcon, ChipIcon, MailIcon, BookOpenIcon } from '@vue-hero-icons/outline'
+import { HomeIcon, ChipIcon, MailIcon } from '@vue-hero-icons/outline'
 
 export default {
   head() {
@@ -39,7 +39,6 @@ export default {
         { text: this.$t('titles.home'), link: this.localePath('/'), icon: HomeIcon },
         { text: this.$t('titles.works'), link: this.localePath('/works'), icon: ChipIcon },
         { text: this.$t('titles.contact'), link: this.localePath('/contact'), icon: MailIcon },
-        { text: this.$t('titles.blog'), link: this.localePath('/blog'), icon: BookOpenIcon },
       ]
     },
   },

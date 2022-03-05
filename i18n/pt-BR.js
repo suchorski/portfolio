@@ -1,12 +1,11 @@
 export default {
   portfolio: {
-    title: 'Meu Portifólio',
+    title: 'Meu Portfólio',
   },
   titles: {
     home: 'Início',
     works: 'Trabalhos',
     contact: 'Contato',
-    blog: 'Artigos',
   },
   about: {
     me: 'Me chamo Thiago Bastos Suchorski, atualmente moro em Lagoa Santa - MG, nascido em 21 de Janeiro de 1987 e sempre gostrei de programar desde pequeno.',
@@ -18,15 +17,25 @@ export default {
     message: 'Sinta-se livre para me contatar. Você pode estar enviando um email para <a href="mailto:thiago@suchorski.com">thiago@suchorski.com</a> que estarei respondendo assim que possível.',
     selling: 'Estou aberto para reclamações, sugestões, dúvidas ou solicitações de orçamento.',
   },
-  blog: {
-    none: 'Nenhum artigo encontrado',
-    read: 'Ler artigo',
-    at: {
-      created: 'Criado dia {cardinalDay} de {month} de {year}',
-      updated: ' e atualizado dia {cardinalDay} de {month} de {year}',
-    },
-  },
   works: [
+    {
+      title: 'Rommanel Ponto Descontos',
+      subtitle: 'Java Spring & Nuxt',
+      text: 'Site para revenda de produtos Rommanel.',
+      mockup: 'rommanel',
+      links: [
+        { text: 'Link para o site', href: 'https://www.rommanelpontodescontos.com.br/' },
+      ],
+    },
+    {
+      title: 'Desafios da Wine',
+      subtitle: 'Java Spring & Nuxt',
+      text: 'Site para responder as questões da Wine automaticamente.',
+      mockup: 'wine',
+      links: [
+        { text: 'Link para o site', href: 'https://wine.suchorski.com/' },
+      ],
+    },
     {
       title: 'Zero Pane',
       subtitle: 'Java Spring & Nuxt',
