@@ -1,6 +1,6 @@
 {
   "name": "suchorski-portfolio",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -26,5 +26,9 @@
     "eslint-config-prettier": "^8.3.0",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1"
+  },
+  "overrides": {
+    "glob-parent": "5.1.2",
+    "nth-check": "2.0.1"
   }
 }
