@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-center items-stretch space-y-8 text-xl">
+  <div class="flex flex-col justify-center items-stretch space-y-8 text-xl text-justify">
     <SpTitle>{{ $t('titles.contact') }}</SpTitle>
     <p class="mx-8" v-html="$t('contact.message')" />
     <p class="mx-8">{{ $t('contact.selling') }}</p>
