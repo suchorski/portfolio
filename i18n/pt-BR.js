@@ -19,6 +19,15 @@ export default {
   },
   works: [
     {
+      title: 'Poupa Tech',
+      subtitle: 'Java Spring & Nuxt',
+      text: 'Site para divulgação de produtos do AliExpress.',
+      mockup: 'poupatech',
+      links: [
+        { text: 'Link para o site', href: 'https://poupa.tech/' },
+      ],
+    },
+    {
       title: 'Rommanel Ponto Descontos',
       subtitle: 'Java Spring & Nuxt',
       text: 'Site para revenda de produtos Rommanel.',

@@ -19,6 +19,15 @@ export default {
   },
   works: [
     {
+      title: 'Poupa Tech',
+      subtitle: 'Java Spring & Nuxt',
+      text: 'AliExpress product promotion website.',
+      mockup: 'poupatech',
+      links: [
+        { text: 'Link to website', href: 'https://poupa.tech/' },
+      ],
+    },
+    {
       title: 'Rommanel Ponto Descontos',
       subtitle: 'Java Spring & Nuxt',
       text: 'Website for Rommanel products selling.',
@@ -27,7 +36,7 @@ export default {
         { text: 'Link to website', href: 'https://www.rommanelpontodescontos.com.br/' },
       ],
     },
-        {
+    {
       title: 'Wine Challenge',
       subtitle: 'Java Spring & Nuxt',
       text: 'Site to answer Wine questions automatically.',
