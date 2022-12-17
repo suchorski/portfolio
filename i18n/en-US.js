@@ -37,15 +37,6 @@ export default {
       ],
     },
     {
-      title: 'Wine Challenge',
-      subtitle: 'Java Spring & Nuxt',
-      text: 'Site to answer Wine questions automatically.',
-      mockup: 'wine',
-      links: [
-        { text: 'Link to website', href: 'https://wine.suchorski.com/' },
-      ],
-    },
-    {
       title: 'Zero Pane',
       subtitle: 'Java Spring & Nuxt',
       text: 'Questions and tests website for internal courses of the Brazilian Air Force.',
